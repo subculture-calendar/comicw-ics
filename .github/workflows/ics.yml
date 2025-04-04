@@ -34,6 +34,6 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add docs/comicw.ics comicw.db
+          git add output/comicw.ics output/comicw.db
           git commit -m "Update comicw.ics, comicw.db"
           git push https://${{ secrets.GH_TOKEN }}@github.com/subculture-calendar/comicw-ics.git HEAD:main
